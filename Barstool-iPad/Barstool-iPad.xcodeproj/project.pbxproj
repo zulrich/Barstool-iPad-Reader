@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A50F8B7C19C9452A000539F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B7B19C9452A000539F9 /* AppDelegate.swift */; };
+		A50F8B7E19C9452A000539F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B7D19C9452A000539F9 /* ViewController.swift */; };
+		A50F8B8119C9452A000539F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B7F19C9452A000539F9 /* Main.storyboard */; };
+		A50F8B8319C9452A000539F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B8219C9452A000539F9 /* Images.xcassets */; };
+		A50F8B8619C9452A000539F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B8419C9452A000539F9 /* LaunchScreen.xib */; };
+		A50F8B9219C9452A000539F9 /* Barstool_iPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B9119C9452A000539F9 /* Barstool_iPadTests.swift */; };
+		A5260CCB19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */; };
+		A526F43E19E392EE0047FA91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F43D19E392EE0047FA91 /* User.swift */; };
+		A54B9EF619E5A72C0003F39D /* MPArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF419E5A72C0003F39D /* MPArrowRight.png */; };
+		A54B9EF719E5A72C0003F39D /* MPArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */; };
+		A54B9EFA19E5A7340003F39D /* MPArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF819E5A7340003F39D /* MPArrowLeft.png */; };
+		A54B9EFB19E5A7340003F39D /* MPArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */; };
+		A54B9EFD19E5A8CB0003F39D /* WebNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */; };
+		A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5219E4F6BF00BF03C0 /* menu-icon.png */; };
+		A5578B5519E4F6BF00BF03C0 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */; };
+		A5578B6119E50AF500BF03C0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */; };
+		A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586D80519E263C6005070D8 /* LoginViewController.swift */; };
+		A586D80719E26829005070D8 /* InlineComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */; };
+		A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5981EAA19D3B6B000B33347 /* BlogManager.swift */; };
+		A5981EAD19D3CA9D00B33347 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5981EAC19D3CA9D00B33347 /* Blog.swift */; };
+		A598675719DE504200839D00 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A598675619DE504200839D00 /* SwipeView.m */; };
+		A598675B19DE598A00839D00 /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A598675A19DE598A00839D00 /* BlogView.swift */; };
+		A598675D19DE59B300839D00 /* BlogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A598675C19DE59B300839D00 /* BlogView.xib */; };
+		A598676119DE7E3200839D00 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A598676019DE7E3200839D00 /* WebKit.framework */; };
+		A5A255C419E238CF009FA1AF /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A255C219E238CF009FA1AF /* up.png */; };
+		A5A255C519E238CF009FA1AF /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A255C319E238CF009FA1AF /* down.png */; };
+		A5A255CA19E24DD0009FA1AF /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A255C919E24DD0009FA1AF /* String+MD5.swift */; };
+		A5A255CF19E25B47009FA1AF /* InlineComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A255CE19E25B47009FA1AF /* InlineComposeView.m */; };
+		A5A255D219E25E41009FA1AF /* InlineComposeToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */; };
+		A5A38A8C19ECD34100BFEBE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */; };
+		A5A38A9219ECD3C100BFEBE6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5A38A8F19ECD3C100BFEBE6 /* SVProgressHUD.bundle */; };
+		A5A38A9319ECD3C100BFEBE6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */; };
+		A5B8A70D19DCF7C600F9D33A /* BlogColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */; };
+		A5B8A71019DCFBE200F9D33A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */; };
+		A5B8A71119DCFBE200F9D33A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */; };
+		A5BB0FB919DF8F1F00FA6D95 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */; };
+		A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */; };
+		A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */; };
+		A5FD7F6F19D23E390070E921 /* BlogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */; };
+		A5FD7F7119D240810070E921 /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A50F8B8C19C9452A000539F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50F8B6E19C9452A000539F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50F8B7519C9452A000539F9;
+			remoteInfo = "Barstool-iPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A50F8B7619C9452A000539F9 /* Barstool-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barstool-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50F8B7A19C9452A000539F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50F8B7B19C9452A000539F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A50F8B7D19C9452A000539F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A50F8B8019C9452A000539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A50F8B8219C9452A000539F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A50F8B8519C9452A000539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A50F8B8B19C9452A000539F9 /* Barstool-iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barstool-iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50F8B9019C9452A000539F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50F8B9119C9452A000539F9 /* Barstool_iPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barstool_iPadTests.swift; sourceTree = "<group>"; };
+		A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		A526F43D19E392EE0047FA91 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Barstool-iPad/User.swift"; sourceTree = "<group>"; };
+		A54B9EF419E5A72C0003F39D /* MPArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowRight.png; sourceTree = "<group>"; };
+		A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowRight@2x.png"; sourceTree = "<group>"; };
+		A54B9EF819E5A7340003F39D /* MPArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowLeft.png; sourceTree = "<group>"; };
+		A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowLeft@2x.png"; sourceTree = "<group>"; };
+		A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebNavViewController.swift; path = "Barstool-iPad/WebNavViewController.swift"; sourceTree = "<group>"; };
+		A5578B5219E4F6BF00BF03C0 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
+		A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = "Barstool-iPad/SettingsTableViewController.swift"; sourceTree = "<group>"; };
+		A586D80519E263C6005070D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A5981EAA19D3B6B000B33347 /* BlogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogManager.swift; path = "Barstool-iPad/BlogManager.swift"; sourceTree = "<group>"; };
+		A5981EAC19D3CA9D00B33347 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blog.swift; path = "Barstool-iPad/Blog.swift"; sourceTree = "<group>"; };
+		A598675519DE504200839D00 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		A598675619DE504200839D00 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		A598675919DE51F500839D00 /* Barstool-iPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Barstool-iPad-Bridging-Header.h"; sourceTree = "<group>"; };
+		A598675A19DE598A00839D00 /* BlogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		A598675C19DE59B300839D00 /* BlogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogView.xib; sourceTree = "<group>"; };
+		A598676019DE7E3200839D00 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A5A255C219E238CF009FA1AF /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		A5A255C319E238CF009FA1AF /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		A5A255C919E24DD0009FA1AF /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineComposeView.xib; sourceTree = "<group>"; };
+		A5A255CD19E25B47009FA1AF /* InlineComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeView.h; sourceTree = "<group>"; };
+		A5A255CE19E25B47009FA1AF /* InlineComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeView.m; sourceTree = "<group>"; };
+		A5A255D019E25E41009FA1AF /* InlineComposeToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeToolbarView.h; sourceTree = "<group>"; };
+		A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeToolbarView.m; sourceTree = "<group>"; };
+		A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A5A38A8E19ECD3C100BFEBE6 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		A5A38A8F19ECD3C100BFEBE6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A5A38A9019ECD3C100BFEBE6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogColors.swift; path = "Barstool-iPad/BlogColors.swift"; sourceTree = "<group>"; };
+		A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "Barstool-iPad/Comment.swift"; sourceTree = "<group>"; };
+		A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentTableViewCell.swift; path = "Barstool-iPad/CommentTableViewCell.swift"; sourceTree = "<group>"; };
+		A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewController.swift; sourceTree = "<group>"; };
+		A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A50F8B7319C9452A000539F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A38A8C19ECD34100BFEBE6 /* QuartzCore.framework in Frameworks */,
+				A598676119DE7E3200839D00 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50F8B8819C9452A000539F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50F8B6D19C9452A000539F9 = {
+			isa = PBXGroup;
+			children = (
+				A5A38A8D19ECD3C100BFEBE6 /* SVProgressHUD */,
+				A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */,
+				A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */,
+				A54B9EF819E5A7340003F39D /* MPArrowLeft.png */,
+				A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */,
+				A54B9EF419E5A72C0003F39D /* MPArrowRight.png */,
+				A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */,
+				A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */,
+				A5578B5219E4F6BF00BF03C0 /* menu-icon.png */,
+				A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */,
+				A526F43D19E392EE0047FA91 /* User.swift */,
+				A5A255CD19E25B47009FA1AF /* InlineComposeView.h */,
+				A5A255CE19E25B47009FA1AF /* InlineComposeView.m */,
+				A5A255D019E25E41009FA1AF /* InlineComposeToolbarView.h */,
+				A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */,
+				A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */,
+				A5A255C219E238CF009FA1AF /* up.png */,
+				A5A255C319E238CF009FA1AF /* down.png */,
+				A598676019DE7E3200839D00 /* WebKit.framework */,
+				A598675919DE51F500839D00 /* Barstool-iPad-Bridging-Header.h */,
+				A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */,
+				A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */,
+				A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */,
+				A5981EAA19D3B6B000B33347 /* BlogManager.swift */,
+				A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */,
+				A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */,
+				A5981EAC19D3CA9D00B33347 /* Blog.swift */,
+				A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */,
+				A50F8B7819C9452A000539F9 /* Barstool-iPad */,
+				A50F8B8E19C9452A000539F9 /* Barstool-iPadTests */,
+				A50F8B7719C9452A000539F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50F8B7719C9452A000539F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A50F8B7619C9452A000539F9 /* Barstool-iPad.app */,
+				A50F8B8B19C9452A000539F9 /* Barstool-iPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A50F8B7819C9452A000539F9 /* Barstool-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A50F8B7B19C9452A000539F9 /* AppDelegate.swift */,
+				A50F8B7D19C9452A000539F9 /* ViewController.swift */,
+				A50F8B7F19C9452A000539F9 /* Main.storyboard */,
+				A586D80519E263C6005070D8 /* LoginViewController.swift */,
+				A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */,
+				A5A255C919E24DD0009FA1AF /* String+MD5.swift */,
+				A598675C19DE59B300839D00 /* BlogView.xib */,
+				A598675A19DE598A00839D00 /* BlogView.swift */,
+				A598675419DE504200839D00 /* SwipeView */,
+				A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */,
+				A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */,
+				A50F8B8219C9452A000539F9 /* Images.xcassets */,
+				A50F8B8419C9452A000539F9 /* LaunchScreen.xib */,
+				A50F8B7919C9452A000539F9 /* Supporting Files */,
+			);
+			path = "Barstool-iPad";
+			sourceTree = "<group>";
+		};
+		A50F8B7919C9452A000539F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50F8B7A19C9452A000539F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50F8B8E19C9452A000539F9 /* Barstool-iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A50F8B9119C9452A000539F9 /* Barstool_iPadTests.swift */,
+				A50F8B8F19C9452A000539F9 /* Supporting Files */,
+			);
+			path = "Barstool-iPadTests";
+			sourceTree = "<group>";
+		};
+		A50F8B8F19C9452A000539F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50F8B9019C9452A000539F9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A598675419DE504200839D00 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				A598675519DE504200839D00 /* SwipeView.h */,
+				A598675619DE504200839D00 /* SwipeView.m */,
+			);
+			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		A5A38A8D19ECD3C100BFEBE6 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A5A38A8E19ECD3C100BFEBE6 /* SVProgressHUD-Prefix.pch */,
+				A5A38A8F19ECD3C100BFEBE6 /* SVProgressHUD.bundle */,
+				A5A38A9019ECD3C100BFEBE6 /* SVProgressHUD.h */,
+				A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50F8B7519C9452A000539F9 /* Barstool-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50F8B9519C9452A000539F9 /* Build configuration list for PBXNativeTarget "Barstool-iPad" */;
+			buildPhases = (
+				A50F8B7219C9452A000539F9 /* Sources */,
+				A50F8B7319C9452A000539F9 /* Frameworks */,
+				A50F8B7419C9452A000539F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Barstool-iPad";
+			productName = "Barstool-iPad";
+			productReference = A50F8B7619C9452A000539F9 /* Barstool-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50F8B8A19C9452A000539F9 /* Barstool-iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50F8B9819C9452A000539F9 /* Build configuration list for PBXNativeTarget "Barstool-iPadTests" */;
+			buildPhases = (
+				A50F8B8719C9452A000539F9 /* Sources */,
+				A50F8B8819C9452A000539F9 /* Frameworks */,
+				A50F8B8919C9452A000539F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50F8B8D19C9452A000539F9 /* PBXTargetDependency */,
+			);
+			name = "Barstool-iPadTests";
+			productName = "Barstool-iPadTests";
+			productReference = A50F8B8B19C9452A000539F9 /* Barstool-iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50F8B6E19C9452A000539F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Zack Ulrich";
+				TargetAttributes = {
+					A50F8B7519C9452A000539F9 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 8836DJ3MNK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					A50F8B8A19C9452A000539F9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A50F8B7519C9452A000539F9;
+					};
+				};
+			};
+			buildConfigurationList = A50F8B7119C9452A000539F9 /* Build configuration list for PBXProject "Barstool-iPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50F8B6D19C9452A000539F9;
+			productRefGroup = A50F8B7719C9452A000539F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50F8B7519C9452A000539F9 /* Barstool-iPad */,
+				A50F8B8A19C9452A000539F9 /* Barstool-iPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A50F8B7419C9452A000539F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A255C419E238CF009FA1AF /* up.png in Resources */,
+				A54B9EFA19E5A7340003F39D /* MPArrowLeft.png in Resources */,
+				A598675D19DE59B300839D00 /* BlogView.xib in Resources */,
+				A54B9EF719E5A72C0003F39D /* MPArrowRight@2x.png in Resources */,
+				A5578B5519E4F6BF00BF03C0 /* menu-icon@2x.png in Resources */,
+				A50F8B8119C9452A000539F9 /* Main.storyboard in Resources */,
+				A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */,
+				A5A38A9219ECD3C100BFEBE6 /* SVProgressHUD.bundle in Resources */,
+				A54B9EF619E5A72C0003F39D /* MPArrowRight.png in Resources */,
+				A50F8B8619C9452A000539F9 /* LaunchScreen.xib in Resources */,
+				A54B9EFB19E5A7340003F39D /* MPArrowLeft@2x.png in Resources */,
+				A586D80719E26829005070D8 /* InlineComposeView.xib in Resources */,
+				A50F8B8319C9452A000539F9 /* Images.xcassets in Resources */,
+				A5A255C519E238CF009FA1AF /* down.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50F8B8919C9452A000539F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A50F8B7219C9452A000539F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A255D219E25E41009FA1AF /* InlineComposeToolbarView.m in Sources */,
+				A54B9EFD19E5A8CB0003F39D /* WebNavViewController.swift in Sources */,
+				A5A255CF19E25B47009FA1AF /* InlineComposeView.m in Sources */,
+				A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */,
+				A5A255CA19E24DD0009FA1AF /* String+MD5.swift in Sources */,
+				A598675719DE504200839D00 /* SwipeView.m in Sources */,
+				A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */,
+				A5B8A70D19DCF7C600F9D33A /* BlogColors.swift in Sources */,
+				A50F8B7E19C9452A000539F9 /* ViewController.swift in Sources */,
+				A526F43E19E392EE0047FA91 /* User.swift in Sources */,
+				A5A38A9319ECD3C100BFEBE6 /* SVProgressHUD.m in Sources */,
+				A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */,
+				A598675B19DE598A00839D00 /* BlogView.swift in Sources */,
+				A50F8B7C19C9452A000539F9 /* AppDelegate.swift in Sources */,
+				A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */,
+				A5981EAD19D3CA9D00B33347 /* Blog.swift in Sources */,
+				A5B8A71019DCFBE200F9D33A /* StringExtension.swift in Sources */,
+				A5BB0FB919DF8F1F00FA6D95 /* Comment.swift in Sources */,
+				A5FD7F7119D240810070E921 /* BlogCollectionViewCell.swift in Sources */,
+				A5B8A71119DCFBE200F9D33A /* UIColorExtension.swift in Sources */,
+				A5FD7F6F19D23E390070E921 /* BlogCollectionViewController.swift in Sources */,
+				A5260CCB19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				A5578B6119E50AF500BF03C0 /* SettingsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50F8B8719C9452A000539F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50F8B9219C9452A000539F9 /* Barstool_iPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A50F8B8D19C9452A000539F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50F8B7519C9452A000539F9 /* Barstool-iPad */;
+			targetProxy = A50F8B8C19C9452A000539F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A50F8B7F19C9452A000539F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50F8B8019C9452A000539F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A50F8B8419C9452A000539F9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50F8B8519C9452A000539F9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A50F8B9319C9452A000539F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A50F8B9419C9452A000539F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A50F8B9619C9452A000539F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = "Barstool-iPad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Barstool-iPad-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Barstool-iPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		A50F8B9719C9452A000539F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = "Barstool-iPad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Barstool-iPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		A50F8B9919C9452A000539F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Barstool-iPadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barstool-iPad.app/Barstool-iPad";
+			};
+			name = Debug;
+		};
+		A50F8B9A19C9452A000539F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Barstool-iPadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barstool-iPad.app/Barstool-iPad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A50F8B7119C9452A000539F9 /* Build configuration list for PBXProject "Barstool-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50F8B9319C9452A000539F9 /* Debug */,
+				A50F8B9419C9452A000539F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50F8B9519C9452A000539F9 /* Build configuration list for PBXNativeTarget "Barstool-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50F8B9619C9452A000539F9 /* Debug */,
+				A50F8B9719C9452A000539F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50F8B9819C9452A000539F9 /* Build configuration list for PBXNativeTarget "Barstool-iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50F8B9919C9452A000539F9 /* Debug */,
+				A50F8B9A19C9452A000539F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A50F8B6E19C9452A000539F9 /* Project object */;
+}
