@@ -23,6 +23,8 @@
 		A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5219E4F6BF00BF03C0 /* menu-icon.png */; };
 		A5578B5519E4F6BF00BF03C0 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */; };
 		A5578B6119E50AF500BF03C0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */; };
+		A57CADD319F60B6A00150CEF /* greypaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A57CADD219F60B6A00150CEF /* greypaper2.jpg */; };
+		A57CADD519F60EC100150CEF /* sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CADD419F60EC100150CEF /* sketch.png */; };
 		A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586D80519E263C6005070D8 /* LoginViewController.swift */; };
 		A586D80719E26829005070D8 /* InlineComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */; };
 		A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5981EAA19D3B6B000B33347 /* BlogManager.swift */; };
@@ -80,6 +82,8 @@
 		A5578B5219E4F6BF00BF03C0 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
 		A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = "Barstool-iPad/SettingsTableViewController.swift"; sourceTree = "<group>"; };
+		A57CADD219F60B6A00150CEF /* greypaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greypaper2.jpg; sourceTree = "<group>"; };
+		A57CADD419F60EC100150CEF /* sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sketch.png; sourceTree = "<group>"; };
 		A586D80519E263C6005070D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A5981EAA19D3B6B000B33347 /* BlogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogManager.swift; path = "Barstool-iPad/BlogManager.swift"; sourceTree = "<group>"; };
 		A5981EAC19D3CA9D00B33347 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blog.swift; path = "Barstool-iPad/Blog.swift"; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 		A50F8B6D19C9452A000539F9 = {
 			isa = PBXGroup;
 			children = (
+				A57CADD419F60EC100150CEF /* sketch.png */,
+				A57CADD219F60B6A00150CEF /* greypaper2.jpg */,
 				A5A38A8D19ECD3C100BFEBE6 /* SVProgressHUD */,
 				A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */,
 				A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */,
@@ -338,12 +344,14 @@
 				A50F8B8119C9452A000539F9 /* Main.storyboard in Resources */,
 				A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */,
 				A5A38A9219ECD3C100BFEBE6 /* SVProgressHUD.bundle in Resources */,
+				A57CADD319F60B6A00150CEF /* greypaper2.jpg in Resources */,
 				A54B9EF619E5A72C0003F39D /* MPArrowRight.png in Resources */,
 				A50F8B8619C9452A000539F9 /* LaunchScreen.xib in Resources */,
 				A54B9EFB19E5A7340003F39D /* MPArrowLeft@2x.png in Resources */,
 				A586D80719E26829005070D8 /* InlineComposeView.xib in Resources */,
 				A50F8B8319C9452A000539F9 /* Images.xcassets in Resources */,
 				A5A255C519E238CF009FA1AF /* down.png in Resources */,
+				A57CADD519F60EC100150CEF /* sketch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,8 +564,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: zack ulrich (9AQK86HGFB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,8 +585,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: zack ulrich (9AQK86HGFB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zack ulrich (9AQK86HGFB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

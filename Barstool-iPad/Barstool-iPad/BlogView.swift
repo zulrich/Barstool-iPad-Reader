@@ -168,15 +168,19 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
         
         //var styleString = "<style type=\"text/css\">body{width:60%;margin-left:auto;margin-right:auto;}</style>"
         
+        var styleString = "<style type=\"text/css\">p {font-size: 20px;}</style>"
         
         var htmlString:NSString = selectedBlog.postContent as NSString;
         
-        //htmlString = styleString.stringByAppendingString(htmlString)
+        htmlString = styleString.stringByAppendingString(htmlString)
         
         //println("showing a blog \(htmlString) ")
 
         
         self.webView.loadHTMLString(htmlString, baseURL: nil)
+        
+        self.webView.opaque = false
+        self.webView.backgroundColor = UIColor(patternImage: UIImage(named: "sketch.png"))
         
         var blogColor = BlogColors.getColor(selectedBlog.blogId.stringValue)
         
