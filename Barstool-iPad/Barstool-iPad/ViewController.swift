@@ -7,20 +7,24 @@
 //
 
 import UIKit
+import iAd
 
-class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,BlogViewDelegate, UIPopoverControllerDelegate {
+class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,BlogViewDelegate, UIPopoverControllerDelegate, ADBannerViewDelegate {
 
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         self.receivedData = NSMutableData();
         self.receivedResponse = NSMutableArray();
        // self.webView = UIWebView();
+        self.bannerIsVisible = false
         super.init(coder: aDecoder);
     }
     
     @IBOutlet var swipeView: SwipeView!
     var receivedData: NSMutableData;
     var receivedResponse:NSMutableArray;
+    var adBanner:ADBannerView!
+    var bannerIsVisible:Bool
     
     @IBOutlet var shareButton: UIBarButtonItem!
     
@@ -33,10 +37,71 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         // Do any additional setup after loading the view, typically from a nib.
         self.receivedData = NSMutableData()
         self.receivedResponse = NSMutableArray()
+        self.adBanner = ADBannerView(frame: CGRectMake(0, self.view.frame.height, 0, 66))
+        self.adBanner.delegate = self
+        self.view.addSubview(self.adBanner)
+        self.bannerIsVisible = false
         //self.webView = UIWebView(frame: self.view.frame)
         
     }
     
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        
+        if(!self.bannerIsVisible)
+        {
+            UIView.animateWithDuration(0.25, animations: {
+                
+                banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -banner.frame.size.height)
+            })
+            
+            self.bannerIsVisible = true
+        }
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        
+        if(self.bannerIsVisible)
+        {
+            UIView.animateWithDuration(0.25, animations: {
+                banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
+                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, banner.frame.size.height)
+            })
+            
+            self.bannerIsVisible = false
+        }
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        
+        let transitionToWide = size.width > size.height
+        
+        if(transitionToWide)
+        {
+            
+            if(bannerIsVisible)
+            {
+                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 1024, adBanner.frame.height)
+                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
+                
+            }
+            
+            
+        }
+        else
+        {
+            if(bannerIsVisible)
+            {
+                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 768, adBanner.frame.height)
+                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
+            }
+        }
+        
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         println("selected blog index \(blogIndex)")

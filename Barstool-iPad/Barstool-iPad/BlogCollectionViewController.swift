@@ -7,19 +7,23 @@
 //
 
 import UIKit
+import iAd
 
 let reuseIdentifier = "blogCell"
 
-class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCollectionViewDelegateWaterfallLayout, UISplitViewControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate
+class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCollectionViewDelegateWaterfallLayout, UISplitViewControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, ADBannerViewDelegate
 {
     var refreshView:UIRefreshControl
     var hideMenu:Bool
+    var adBanner:ADBannerView!
+    var bannerIsVisible:Bool
     
     @IBOutlet var collectionView: UICollectionView!
     required init(coder aDecoder: NSCoder) {
     
         refreshView = UIRefreshControl()
         hideMenu = true
+        bannerIsVisible = false
         super.init(coder: aDecoder)
     }
     
@@ -27,6 +31,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         super.viewDidLoad()
      
         self.hideMenu = true
+        self.bannerIsVisible = false
         BlogManager.sharedInstance.delegate = self
         self.splitViewController?.delegate = self
                 
@@ -36,6 +41,11 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         self.navigationController?.navigationBar
         
+        adBanner = ADBannerView(frame: CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 66));
+        adBanner.backgroundColor = UIColor.greenColor()
+        
+        adBanner.delegate = self
+        self.view.addSubview(adBanner)
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -123,7 +133,70 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         vc.blogIndex = ip.row
     }
-
+    
+    
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        
+        if(!self.bannerIsVisible)
+        {
+            UIView.animateWithDuration(0.25, animations: {
+                
+                banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+                //self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, -banner.frame.size.height)
+                
+                self.collectionView.frame = CGRectMake(0, self.collectionView.frame.origin.y, self.collectionView.frame.width, self.collectionView.frame.size.height - banner.frame.size.height)
+                
+            })
+            
+            self.bannerIsVisible = true
+        }
+        
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        
+        let transitionToWide = size.width > size.height
+        
+        if(transitionToWide)
+        {
+            //banner.frame = CGRectOffset(banner.fram, <#dx: CGFloat#>, <#dy: CGFloat#>)
+            
+            if(bannerIsVisible)
+            {
+                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 1024, adBanner.frame.height)
+                self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, -adBanner.frame.height)
+                
+            }
+            
+        }
+        else
+        {
+            if(bannerIsVisible)
+            {
+                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 768, adBanner.frame.height)
+                self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, -adBanner.frame.height)
+            }
+        }
+        
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        
+        println("Failed to load ad \(error)")
+        
+        if(self.bannerIsVisible)
+        {
+            UIView.animateWithDuration(0.25, animations: {
+                banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
+                self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, banner.frame.size.height)
+            })
+            self.bannerIsVisible = false
+        }
+        
+    }
 
     @IBAction func settingsPressed(sender: AnyObject) {
         

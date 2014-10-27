@@ -63,7 +63,7 @@ class CommentsViewController: UIViewController, NSURLConnectionDataDelegate, UIT
         
 //        var commentStr = "userid=12f3c396a447636e175c04b74d6fed52&app_type=barstool_ios&call=get-comments&version=1.13&json={\"property\":\"10\",\"story_id\":\"\(self.selectedStoryID)\"}&hash=8c2deca9756468a98648125206f776bb"
         
-        var commentStr = "userid=12f3c396a447636e175c04b74d6fed52&app_type=barstool_ios&call=get-comments&version=1.13&json={\"property\":\"\(self.blogID)\",\"story_id\":\"\(self.selectedStoryID)\"}&hash=7f3c143b6fb357cac16a5e4e9f08cad3"
+        var commentStr = "userid=12f3c396a447636e175c04b74d6fed52&app_type=barstool_ios&call=get-comments&version=1.13&json={\"property\":\"\(self.blogID)\",\"story_id\":\"\(self.selectedStoryID)\"}"
         
         println(self.selectedStoryID.md5)
         println("")

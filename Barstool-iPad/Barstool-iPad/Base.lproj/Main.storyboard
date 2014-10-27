@@ -233,9 +233,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RWz-Bd-9ih" firstAttribute="top" secondItem="p3M-1D-LAo" secondAttribute="bottom" id="0Jr-Yq-z1v"/>
                             <constraint firstAttribute="bottom" secondItem="RWz-Bd-9ih" secondAttribute="bottom" id="FeW-vL-mL5"/>
                             <constraint firstAttribute="trailing" secondItem="p3M-1D-LAo" secondAttribute="trailing" id="KTy-Td-iL4"/>
+                            <constraint firstItem="RWz-Bd-9ih" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="NbL-aC-jsI"/>
                             <constraint firstAttribute="trailing" secondItem="RWz-Bd-9ih" secondAttribute="trailing" id="WHr-uZ-Hp0"/>
                             <constraint firstItem="RWz-Bd-9ih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cdY-0M-Ocg"/>
                             <constraint firstItem="p3M-1D-LAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dkq-9U-T8I"/>
