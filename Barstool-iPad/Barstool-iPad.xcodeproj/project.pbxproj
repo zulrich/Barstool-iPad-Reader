@@ -49,6 +49,9 @@
 		A5BB0FB919DF8F1F00FA6D95 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */; };
 		A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */; };
 		A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */; };
+		A5E45BB219FE08B900F96982 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BAD19FE08B900F96982 /* MFSideMenuContainerViewController.m */; };
+		A5E45BB319FE08B900F96982 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BAF19FE08B900F96982 /* MFSideMenuShadow.m */; };
+		A5E45BB419FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BB119FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m */; };
 		A5FD7F6F19D23E390070E921 /* BlogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */; };
 		A5FD7F7119D240810070E921 /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -116,6 +119,13 @@
 		A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "Barstool-iPad/Comment.swift"; sourceTree = "<group>"; };
 		A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentTableViewCell.swift; path = "Barstool-iPad/CommentTableViewCell.swift"; sourceTree = "<group>"; };
+		A5E45BAB19FE08B900F96982 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
+		A5E45BAC19FE08B900F96982 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		A5E45BAD19FE08B900F96982 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		A5E45BAE19FE08B900F96982 /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
+		A5E45BAF19FE08B900F96982 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
+		A5E45BB019FE08B900F96982 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		A5E45BB119FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
 		A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewController.swift; sourceTree = "<group>"; };
 		A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +154,7 @@
 		A50F8B6D19C9452A000539F9 = {
 			isa = PBXGroup;
 			children = (
+				A5E45BAA19FE08B900F96982 /* MFSideMenu */,
 				A562581B19FB3962001B537F /* iAd.framework */,
 				A585E93E19F61C3C00D34E8E /* barstool175-75.jpg */,
 				A57CADD419F60EC100150CEF /* sketch.png */,
@@ -255,6 +266,20 @@
 				A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		A5E45BAA19FE08B900F96982 /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A5E45BAB19FE08B900F96982 /* MFSideMenu.h */,
+				A5E45BAC19FE08B900F96982 /* MFSideMenuContainerViewController.h */,
+				A5E45BAD19FE08B900F96982 /* MFSideMenuContainerViewController.m */,
+				A5E45BAE19FE08B900F96982 /* MFSideMenuShadow.h */,
+				A5E45BAF19FE08B900F96982 /* MFSideMenuShadow.m */,
+				A5E45BB019FE08B900F96982 /* UIViewController+MFSideMenuAdditions.h */,
+				A5E45BB119FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m */,
+			);
+			path = MFSideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +407,7 @@
 				A5A255CF19E25B47009FA1AF /* InlineComposeView.m in Sources */,
 				A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */,
 				A5A255CA19E24DD0009FA1AF /* String+MD5.swift in Sources */,
+				A5E45BB419FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				A598675719DE504200839D00 /* SwipeView.m in Sources */,
 				A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */,
 				A5B8A70D19DCF7C600F9D33A /* BlogColors.swift in Sources */,
@@ -389,7 +415,9 @@
 				A526F43E19E392EE0047FA91 /* User.swift in Sources */,
 				A5A38A9319ECD3C100BFEBE6 /* SVProgressHUD.m in Sources */,
 				A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */,
+				A5E45BB319FE08B900F96982 /* MFSideMenuShadow.m in Sources */,
 				A598675B19DE598A00839D00 /* BlogView.swift in Sources */,
+				A5E45BB219FE08B900F96982 /* MFSideMenuContainerViewController.m in Sources */,
 				A50F8B7C19C9452A000539F9 /* AppDelegate.swift in Sources */,
 				A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */,
 				A5981EAD19D3CA9D00B33347 /* Blog.swift in Sources */,

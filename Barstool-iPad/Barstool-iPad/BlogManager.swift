@@ -15,6 +15,22 @@ protocol BlogManagerDelegate {
     func blogsDone()
 }
 
+class Person: NSObject {
+    let firstName: NSString
+    let lastName: String
+    let age: Int
+    
+    init(firstName: NSString, lastName: String, age: Int) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.age = age
+    }
+    
+    override var description: String {
+        return "\(firstName) \(lastName)"
+    }
+}
+
 
 
 class BlogManager: NSObject, NSURLConnectionDataDelegate {
@@ -82,8 +98,54 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
         
     }
     
-    func getCities(){
+    func getBlogsForId(blogId:String) -> NSMutableArray
+    {
         
+        if(blogId == "100")
+        {
+            return blogs
+        }
+        else
+        {
+    
+            //var:blogNum = NSNumber(int:blogId.toInt())
+            
+            //var blg = NSNumber(int: blogId.toInt())
+            
+            let idPred = NSPredicate(format: "author = %@", "feitelberg")
+            
+            var retBlogs = self.blogs.filteredArrayUsingPredicate(idPred)
+            
+            
+            
+//            let alice = Person(firstName: "Alice", lastName: "Smith", age: 24)
+//            let bob = Person(firstName: "Bob", lastName: "Jones", age: 27)
+//            let charlie = Person(firstName: "Charlie", lastName: "Smith", age: 33)
+//            let quentin = Person(firstName: "Quentin", lastName: "Alberts", age: 31)
+//            //var people = [alice, bob, charlie, quentin]
+//            
+//            var people = NSMutableArray(objects: alice, bob, charlie,quentin)
+//            
+//            let bobPredicate = NSPredicate(format: "firstName != %@", "aaab")
+//            //let smithPredicate = NSPredicate(format: "lastName = %@", "Smith")
+//            //let thirtiesPredicate = NSPredicate(format: "age >= 30")
+//            
+//            
+//            
+//            var x = people.filteredArrayUsingPredicate(bobPredicate)
+//            // ["Bob Jones"]
+//            
+//            //var y = people.filteredArrayUsingPredicate(smithPredicate)
+//            // ["Alice Smith", "Charlie Smith"]
+//            
+//            //var z = people.filteredArrayUsingPredicate(thirtiesPredicate)
+//            // ["Charlie Smith", "Quentin Alberts"]
+            
+            
+            
+        
+            return NSMutableArray(array: retBlogs)
+        }
     }
     
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {

@@ -17,6 +17,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        var settingsVC:SettingsTableViewController = storyboard.instantiateViewControllerWithIdentifier("settingsVC") as SettingsTableViewController
+
+        let collectionVC = storyboard.instantiateViewControllerWithIdentifier("blogCollectVC") as BlogCollectionViewController;
+        
+        settingsVC.settingsDelegate = collectionVC
+        
+        var sideContainer = MFSideMenuContainerViewController.containerWithCenterViewController(collectionVC, leftMenuViewController: settingsVC, rightMenuViewController: nil)
+        
+        self.window?.rootViewController = sideContainer
+        self.window?.makeKeyAndVisible()
+        /*
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        UITabBarController *tabBarController = [[UITabBarController alloc] init];
+        [tabBarController setViewControllers:[NSArray arrayWithObjects:[self navigationController],
+        [self navigationController], nil]];
+        
+        SideMenuViewController *leftSideMenuController = [[SideMenuViewController alloc] init];
+        SideMenuViewController *rightSideMenuController = [[SideMenuViewController alloc] init];
+        MFSideMenuContainerViewController *container = [MFSideMenuContainerViewController
+        containerWithCenterViewController:tabBarController
+        leftMenuViewController:leftSideMenuController
+        rightMenuViewController:rightSideMenuController];
+        
+        self.window.rootViewController = container;
+        [self.window makeKeyAndVisible];
+*/
+        
         
         BlogManager.sharedInstance.getBlogs()
 

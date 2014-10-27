@@ -20,6 +20,7 @@ let iowaBlog = ["id": "12", "name": "iowa", "color" : "0xE9CE23"]
 
 let blogColors = ["2" : "#A10000", "3" : "#333333", "4" : "#1E6D57", "5" : "#003366", "7" : "#F17220", "10" : "#004967", "12" : "#E9CE23"]
 
+let blogNameDict = ["Boston" : "2", "New York City" : "3", "Philly" : "4", "BarstoolU" : "5", "Chicago": "7", "DMV" : "10", "Iowa" : "12" , "Super Page" : "100"]
 
 
 class BlogColors {
@@ -30,6 +31,11 @@ class BlogColors {
         
         return UIColor(rgba: blogColor!)
         
+    }
+    
+    class func getBlogId(blogName:String) -> String
+    {
+        return blogNameDict[blogName]!
     }
     
 

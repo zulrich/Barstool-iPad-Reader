@@ -11,12 +11,14 @@ import iAd
 
 let reuseIdentifier = "blogCell"
 
-class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCollectionViewDelegateWaterfallLayout, UISplitViewControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, ADBannerViewDelegate
+class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCollectionViewDelegateWaterfallLayout, UISplitViewControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, ADBannerViewDelegate, SettingsViewDelegate
 {
     var refreshView:UIRefreshControl
     var hideMenu:Bool
     var adBanner:ADBannerView!
     var bannerIsVisible:Bool
+    var blogsToShow:NSMutableArray
+    
     
     @IBOutlet var collectionView: UICollectionView!
     required init(coder aDecoder: NSCoder) {
@@ -24,6 +26,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         refreshView = UIRefreshControl()
         hideMenu = true
         bannerIsVisible = false
+        blogsToShow = NSMutableArray()
         super.init(coder: aDecoder)
     }
     
@@ -32,6 +35,8 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
      
         self.hideMenu = true
         self.bannerIsVisible = false
+        blogsToShow = NSMutableArray()
+        
         BlogManager.sharedInstance.delegate = self
         self.splitViewController?.delegate = self
                 
@@ -85,6 +90,12 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         return CGSizeMake(200, 200)
         
+    }
+    
+    func blogFilter(blogId: String) {
+        
+        self.blogsToShow = BlogManager.sharedInstance.getBlogsForId(blogId)
+        self.collectionView.reloadData()
     }
     
 
@@ -141,7 +152,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         {
             UIView.animateWithDuration(0.25, animations: {
                 
-                banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+                //banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
                 //self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, -banner.frame.size.height)
                 
                 self.collectionView.frame = CGRectMake(0, self.collectionView.frame.origin.y, self.collectionView.frame.width, self.collectionView.frame.size.height - banner.frame.size.height)
@@ -190,8 +201,8 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         if(self.bannerIsVisible)
         {
             UIView.animateWithDuration(0.25, animations: {
-                banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
-                self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, banner.frame.size.height)
+                //banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
+                //self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, banner.frame.size.height)
             })
             self.bannerIsVisible = false
         }

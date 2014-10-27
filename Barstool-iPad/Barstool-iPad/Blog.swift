@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Blog {
+class Blog : NSObject {
     
     var author: String
     var risque: Bool
@@ -33,5 +33,8 @@ class Blog {
         self.thumbNail = dict["thumbnail"] as String
         self.blogId = dict["blog_id"] as NSNumber
         self.story_id = dict["ID"] as String
+        
+        
     }
+    
 }
