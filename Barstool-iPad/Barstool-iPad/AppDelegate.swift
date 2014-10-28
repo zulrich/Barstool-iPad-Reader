@@ -20,14 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
         var settingsVC:SettingsTableViewController = storyboard.instantiateViewControllerWithIdentifier("settingsVC") as SettingsTableViewController
 
         let collectionVC = storyboard.instantiateViewControllerWithIdentifier("blogCollectVC") as BlogCollectionViewController;
         
         settingsVC.settingsDelegate = collectionVC
         
-        var sideContainer = MFSideMenuContainerViewController.containerWithCenterViewController(collectionVC, leftMenuViewController: settingsVC, rightMenuViewController: nil)
+        var navVC = UINavigationController(rootViewController: collectionVC)
+
+        
+        var sideContainer = MFSideMenuContainerViewController.containerWithCenterViewController(navVC, leftMenuViewController: settingsVC, rightMenuViewController: nil)
         
         self.window?.rootViewController = sideContainer
         self.window?.makeKeyAndVisible()

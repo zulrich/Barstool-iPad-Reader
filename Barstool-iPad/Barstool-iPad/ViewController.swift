@@ -154,7 +154,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
                 
                 if(index == 0)
                 {
-                    retView.showABlog(BlogManager.sharedInstance.blogsToShow.objectAtIndex(index) as Blog)
+                    //retView.showABlog(BlogManager.sharedInstance.blogsToShow.objectAtIndex(index) as Blog)
                 }
                 //retView = BlogView(frame: self.view.bounds)
             }
@@ -255,45 +255,6 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         return activityVC
     }
     
-    /*
-    - (UIActivityViewController *)activityViewControllerForSharing
-    {
-    NSString *title = self.post.postTitle;
-    NSString *summary = self.post.summary;
-    NSString *tags = self.post.tags;
-    
-    NSMutableArray *activityItems = [NSMutableArray array];
-    NSMutableDictionary *postDictionary = [NSMutableDictionary dictionary];
-    
-    if (title) {
-    postDictionary[@"title"] = title;
-    }
-    if (summary) {
-    postDictionary[@"summary"] = summary;
-    }
-    if (tags) {
-    postDictionary[@"tags"] = tags;
-    }
-    [activityItems addObject:postDictionary];
-    NSURL *permaLink = [NSURL URLWithString:self.post.permaLink];
-    if (permaLink) {
-    [activityItems addObject:permaLink];
-    }
-    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:[WPActivityDefaults defaultActivities]];
-    if (title) {
-    [activityViewController setValue:title forKey:@"subject"];
-    }
-    activityViewController.completionHandler = ^(NSString *activityType, BOOL completed) {
-    if (!completed) {
-    return;
-    }
-    [WPActivityDefaults trackActivityType:activityType];
-    };
-    return activityViewController;
-    }
-
-*/
-    
     @IBAction func commentPressed(sender: AnyObject) {
         
         var blog = BlogManager.sharedInstance.blogsToShow.objectAtIndex(blogIndex!) as Blog
@@ -313,6 +274,8 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         
         self.dismissViewControllerAnimated(true, completion: {
         
+            var curBlog = self.swipeView.currentItemView as BlogView
+            curBlog.cancelHTML()
             println("dismiss")
         })
     }

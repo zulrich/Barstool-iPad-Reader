@@ -76,6 +76,7 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
     
     func webViewDidFinishLoad(webView: UIWebView) {
         self.webView.hidden = false;
+        SVProgressHUD.dismiss()
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -160,6 +161,12 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
     }
     
     
+    func cancelHTML()
+    {
+        self.webView.stopLoading()
+        self.webView.loadHTMLString(nil, baseURL: nil)
+    }
+    
     func showABlog(selectedBlog:Blog)
     {
         
@@ -167,6 +174,8 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
         
         
         //var styleString = "<style type=\"text/css\">body{width:60%;margin-left:auto;margin-right:auto;}</style>"
+        
+        SVProgressHUD.show()
         
         var styleString = "<style type=\"text/css\">p {font-size: 20px;}</style>"
         
@@ -195,7 +204,6 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
         
         self.blogDateLabel.text = selectedBlog.postDate
         self.blogDateLabel.textColor = UIColor.whiteColor()
-        
         
     }
 

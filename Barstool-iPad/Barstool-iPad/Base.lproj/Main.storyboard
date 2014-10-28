@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1dr-UJ-3Gd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,55 +33,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="HQp-8e-d6K"/>
+                    <connections>
+                        <segue destination="aiF-E5-PfX" kind="presentation" identifier="loginFromCommentSegue" id="Gtw-Ei-qAJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2jL-kv-ncP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="-700"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1J1-4J-zzc">
-            <objects>
-                <navigationController id="al9-qz-azR" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lUM-5z-SSG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="cSE-qT-iwY" kind="relationship" relationship="rootViewController" id="DWF-dI-PII"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L60-W5-WjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-875" y="-700"/>
-        </scene>
-        <!--Split View Controller-->
-        <scene sceneID="zbP-R1-2pS">
-            <objects>
-                <splitViewController id="Xb4-ce-kWM" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="al9-qz-azR" kind="relationship" relationship="masterViewController" id="7Bs-qW-Gj4"/>
-                        <segue destination="zqd-aw-ylz" kind="relationship" relationship="detailViewController" id="nRE-GO-6BD"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jTA-3d-WbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1695" y="-369"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="axe-xW-25G">
-            <objects>
-                <navigationController id="zqd-aw-ylz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PwJ-yP-Hji">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="1dr-UJ-3Gd" kind="relationship" relationship="rootViewController" id="3x8-Vq-Pu4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HIH-Nn-5lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1339" y="375"/>
+            <point key="canvasLocation" x="62" y="-381"/>
         </scene>
         <!--Barstool Sports-->
         <scene sceneID="Mui-Dn-HIk">
@@ -169,14 +127,7 @@
                             <constraint firstItem="etn-BP-jTg" firstAttribute="top" secondItem="H0m-Jk-xcY" secondAttribute="top" id="vJX-iw-TSC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Barstool Sports" id="oV2-mH-DnC">
-                        <barButtonItem key="leftBarButtonItem" image="menu-icon.png" id="SOV-Fx-kdy">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="settingsPressed:" destination="1dr-UJ-3Gd" id="8QB-3E-MmB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Barstool Sports" id="oV2-mH-DnC"/>
                     <connections>
                         <outlet property="collectionView" destination="etn-BP-jTg" id="sB3-cS-0pw"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="viewBlogSegue" id="Y4J-nN-99b"/>
@@ -555,14 +506,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0A-Wf-ht5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1917" y="329"/>
+            <point key="canvasLocation" x="1175" y="-381"/>
         </scene>
     </scenes>
     <resources>
         <image name="MPArrowLeft.png" width="24" height="16"/>
         <image name="MPArrowRight.png" width="24" height="16"/>
         <image name="down.png" width="240" height="240"/>
-        <image name="menu-icon.png" width="22" height="17"/>
         <image name="up.png" width="240" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gtw-Ei-qAJ"/>
+    </inferredMetricsTieBreakers>
 </document>

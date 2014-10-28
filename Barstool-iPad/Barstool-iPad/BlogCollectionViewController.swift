@@ -52,7 +52,27 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         //adBanner.delegate = self
         
+        self.setupMenuBarButtonItems()
+        
         self.view.addSubview(adBanner)
+    }
+    
+    func setupMenuBarButtonItems()
+    {
+        self.navigationItem.leftBarButtonItem = self.leftButtonItem()
+    }
+    
+    func leftButtonItem() -> UIBarButtonItem
+    {
+        return UIBarButtonItem(image: UIImage(named: "menu-icon.png"), style: UIBarButtonItemStyle.Plain, target: self, action:NSSelectorFromString("leftPressed"))
+    }
+    
+    func leftPressed()
+    {
+        
+        self.menuContainerViewController.toggleLeftSideMenuCompletion({
+            
+        })
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -101,6 +121,19 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
     func blogFilter(blogId: String) {
         
         BlogManager.sharedInstance.getBlogsForId(blogId)
+        
+        var name = BlogColors.getBlogName(blogId)
+        
+        if((name) != nil)
+        {
+            self.navigationItem.title = name
+
+        }
+        else
+        {
+            self.navigationItem.title = "Barstool Sports"
+        }
+        
         self.collectionView.reloadData()
     }
     

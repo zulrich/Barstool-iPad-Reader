@@ -116,7 +116,10 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
         
         if(data.length == 0)
         {
-            println("Didn't get blogs")
+            SVProgressHUD.show()
+            
+            self.getBlogs()
+            println("Didn't get blogs \(error)")
             return
         }
         
@@ -146,6 +149,8 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
         
         self.blogData = NSMutableData()
         delegate?.blogsDone()
+        
+        SVProgressHUD.dismiss()
         
         
     }

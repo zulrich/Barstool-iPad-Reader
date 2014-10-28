@@ -50,7 +50,7 @@ class SettingsTableViewController: UITableViewController {
         
         if(section == 0)
         {
-            return 0
+            return 1
         }
         else
         {
@@ -63,7 +63,9 @@ class SettingsTableViewController: UITableViewController {
     {
         if(indexPath.section == 0)
         {
-                
+            
+            
+            self.performSegueWithIdentifier("loginFromCommentSegue", sender: nil)
         }
         else
         {
@@ -87,7 +89,19 @@ class SettingsTableViewController: UITableViewController {
         {
             cell = tableView.dequeueReusableCellWithIdentifier("LoginCell") as UITableViewCell
             
-            cell.textLabel.text = "Login Info"
+            
+            var userDict:NSDictionary? = NSUserDefaults.standardUserDefaults().objectForKey("currentUser") as? NSDictionary
+            
+            if(userDict != nil)
+            {
+                var user = User(dict: userDict!)
+                cell.textLabel.text = user.username
+            }
+            else
+            {
+            
+                cell.textLabel.text = "Login"
+            }
         }
         else
         {
