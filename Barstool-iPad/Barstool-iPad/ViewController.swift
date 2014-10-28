@@ -38,7 +38,9 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         self.receivedData = NSMutableData()
         self.receivedResponse = NSMutableArray()
         self.adBanner = ADBannerView(frame: CGRectMake(0, self.view.frame.height, 0, 66))
-        self.adBanner.delegate = self
+        
+        //self.adBanner.delegate = self
+        
         self.view.addSubview(self.adBanner)
         self.bannerIsVisible = false
         //self.webView = UIWebView(frame: self.view.frame)
@@ -51,8 +53,8 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         {
             UIView.animateWithDuration(0.25, animations: {
                 
-                banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
-                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -banner.frame.size.height)
+                //banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+                //self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -banner.frame.size.height)
             })
             
             self.bannerIsVisible = true
@@ -64,8 +66,9 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         if(self.bannerIsVisible)
         {
             UIView.animateWithDuration(0.25, animations: {
-                banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
-                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, banner.frame.size.height)
+               
+                //banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height)
+                //self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, banner.frame.size.height)
             })
             
             self.bannerIsVisible = false
@@ -84,8 +87,8 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
             
             if(bannerIsVisible)
             {
-                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 1024, adBanner.frame.height)
-                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
+                //adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 1024, adBanner.frame.height)
+                //self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
                 
             }
             
@@ -95,8 +98,8 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         {
             if(bannerIsVisible)
             {
-                adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 768, adBanner.frame.height)
-                self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
+                //adBanner.frame = CGRectMake(0, size.height - adBanner.frame.height, 768, adBanner.frame.height)
+                //self.swipeView.frame = CGRectOffset(self.swipeView.frame, 0, -adBanner.frame.height)
             }
         }
         
@@ -115,9 +118,6 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
                 self.swipeView.reloadItemAtIndex(0)
             }
             
-            //var curBlog = self.swipeView.currentItemView as BlogView
-//
-            //curBlog.showABlog(BlogManager.sharedInstance.blogs.objectAtIndex(0) as Blog)
             self.swipeView.scrollToItemAtIndex(blogIndex!, duration: 0.1)
         }
         else if(blogIndex > 0)
@@ -135,7 +135,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
     }
     
     func numberOfItemsInSwipeView(swipeView: SwipeView!) -> Int {
-        return BlogManager.sharedInstance.blogs.count
+        return BlogManager.sharedInstance.blogsToShow.count
     }
     
 
@@ -154,7 +154,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
                 
                 if(index == 0)
                 {
-                    retView.showABlog(BlogManager.sharedInstance.blogs.objectAtIndex(index) as Blog)
+                    retView.showABlog(BlogManager.sharedInstance.blogsToShow.objectAtIndex(index) as Blog)
                 }
                 //retView = BlogView(frame: self.view.bounds)
             }
@@ -162,8 +162,6 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
             {
                 retView = reuseView as BlogView
             }
-            
-            //retView.showABlog(BlogManager.sharedInstance.blogs.objectAtIndex(index) as Blog)
             
             retView.delegate = self
             
@@ -193,10 +191,10 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
         
             var commentVC:CommentsViewController = segue.destinationViewController as CommentsViewController
             
-            var selectedBlog = BlogManager.sharedInstance.blogs.objectAtIndex(swipeView.currentItemIndex) as Blog
+            var selectedBlog = BlogManager.sharedInstance.blogsToShow.objectAtIndex(swipeView.currentItemIndex) as Blog
             
             commentVC.selectedStoryID = selectedBlog.story_id
-            commentVC.blogID = selectedBlog.blogId.stringValue
+            commentVC.blogID = selectedBlog.blogId
         }
     }
 
@@ -208,7 +206,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
 
         self.blogIndex = swipeView.currentItemIndex
         curBlog.webView.hidden = true
-        curBlog.showABlog(BlogManager.sharedInstance.blogs.objectAtIndex(self.blogIndex!) as Blog)
+        curBlog.showABlog(BlogManager.sharedInstance.blogsToShow.objectAtIndex(self.blogIndex!) as Blog)
         
     }
     
@@ -237,7 +235,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
     
     func activityViewControllerForSharing() -> UIActivityViewController
     {
-        var blog = BlogManager.sharedInstance.blogs.objectAtIndex(blogIndex!) as Blog
+        var blog = BlogManager.sharedInstance.blogsToShow.objectAtIndex(blogIndex!) as Blog
         
         var activityItems:NSMutableArray = NSMutableArray()
         
@@ -298,7 +296,7 @@ class ViewController: UIViewController, SwipeViewDataSource,SwipeViewDelegate,Bl
     
     @IBAction func commentPressed(sender: AnyObject) {
         
-        var blog = BlogManager.sharedInstance.blogs.objectAtIndex(blogIndex!) as Blog
+        var blog = BlogManager.sharedInstance.blogsToShow.objectAtIndex(blogIndex!) as Blog
         
         if(blog.commentStatus == "open")
         {

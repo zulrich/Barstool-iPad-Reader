@@ -45,7 +45,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NSURLConnectio
         {
             var loginStr = "userid=12f3c396a447636e175c04b74d6fed52&app_type=barstool_ios&call=new-login&version=1.13&json={\"username\":\"\(self.usernameTextField.text)\",\"password\":\"\(self.passwordTextField.text)\"}&hash=a3dccf3678438a2fd6f9b9446baa8ed3"
             
-            var loginRequest = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php"));
+            var loginRequest = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php")!);
             
             loginRequest.HTTPBody = loginStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true);
             loginRequest.HTTPMethod = "POST";

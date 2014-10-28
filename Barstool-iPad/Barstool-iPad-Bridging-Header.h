@@ -12,3 +12,4 @@
 #import "InlineComposeView.h"
 #import "SVProgressHUD.h"
 #import "MFSideMenuContainerViewController.h"
+#import "UIViewController+MFSideMenuAdditions.h"

@@ -21,7 +21,7 @@ class BlogCollectionViewCell: UICollectionViewCell {
         
         var url = NSURL(string: blogInfo.thumbNail)
         
-        var color:UIColor = BlogColors.getColor(blogInfo.blogId.stringValue)
+        var color:UIColor = BlogColors.getColor(blogInfo.blogId)
         
         self.backgroundColor = color
         self.blogHeadlineTextView.backgroundColor = color
@@ -34,7 +34,7 @@ class BlogCollectionViewCell: UICollectionViewCell {
             
             var error:NSError?
             
-            var imageData:NSData? = NSData(contentsOfURL: url, options: NSDataReadingOptions.DataReadingUncached, error:&error)
+            var imageData:NSData? = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error:&error)
             
             dispatch_async(dispatch_get_main_queue(), {
             

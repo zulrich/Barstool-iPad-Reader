@@ -68,7 +68,7 @@ class CommentsViewController: UIViewController, NSURLConnectionDataDelegate, UIT
         println(self.selectedStoryID.md5)
         println("")
         
-        var commentRequest = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php"));
+        var commentRequest = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php")!);
         
         commentRequest.HTTPBody = commentStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true);
         commentRequest.HTTPMethod = "POST";

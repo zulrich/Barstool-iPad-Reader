@@ -180,9 +180,9 @@ class BlogView: UIView, UIWebViewDelegate, UIScrollViewDelegate, UIAlertViewDele
         self.webView.loadHTMLString(htmlString, baseURL: nil)
         
         self.webView.opaque = false
-        self.webView.backgroundColor = UIColor(patternImage: UIImage(named: "sketch.png"))
+        self.webView.backgroundColor = UIColor(patternImage: UIImage(named: "sketch.png")!)
         
-        var blogColor = BlogColors.getColor(selectedBlog.blogId.stringValue)
+        var blogColor = BlogColors.getColor(selectedBlog.blogId)
         
         self.blogTitleTextView.backgroundColor = blogColor
         self.headerView.backgroundColor = blogColor

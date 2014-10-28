@@ -17,7 +17,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
     var hideMenu:Bool
     var adBanner:ADBannerView!
     var bannerIsVisible:Bool
-    var blogsToShow:NSMutableArray
+    var blogIndex:String
     
     
     @IBOutlet var collectionView: UICollectionView!
@@ -26,7 +26,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         refreshView = UIRefreshControl()
         hideMenu = true
         bannerIsVisible = false
-        blogsToShow = NSMutableArray()
+        self.blogIndex = "100"
         super.init(coder: aDecoder)
     }
     
@@ -35,7 +35,6 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
      
         self.hideMenu = true
         self.bannerIsVisible = false
-        blogsToShow = NSMutableArray()
         
         BlogManager.sharedInstance.delegate = self
         self.splitViewController?.delegate = self
@@ -46,10 +45,13 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         self.navigationController?.navigationBar
         
+        self.blogIndex = "100"
+        
         adBanner = ADBannerView(frame: CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 66));
         adBanner.backgroundColor = UIColor.greenColor()
         
-        adBanner.delegate = self
+        //adBanner.delegate = self
+        
         self.view.addSubview(adBanner)
     }
     
@@ -60,6 +62,8 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
     func startRefresh()
     {
         BlogManager.sharedInstance.getBlogs()
+       //BlogManager.sharedInstance.getBlogsForId(blogIndex)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,6 +86,8 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         println("Blogs done")
         
+        self.blogFilter(blogIndex)
+        
         self.collectionView?.reloadData()
     }
     
@@ -94,7 +100,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
     
     func blogFilter(blogId: String) {
         
-        self.blogsToShow = BlogManager.sharedInstance.getBlogsForId(blogId)
+        BlogManager.sharedInstance.getBlogsForId(blogId)
         self.collectionView.reloadData()
     }
     
@@ -109,7 +115,8 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
 
      func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return BlogManager.sharedInstance.blogs.count
+
+        return BlogManager.sharedInstance.blogsToShow.count
     }
 
      func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -119,7 +126,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         
         
         
-        cell.setupCell(BlogManager.sharedInstance.blogs.objectAtIndex(indexPath.row) as Blog)
+        cell.setupCell(BlogManager.sharedInstance.blogsToShow.objectAtIndex(indexPath.row) as Blog)
         
         return cell
     }
@@ -139,9 +146,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
         var vc:ViewController = segue.destinationViewController as ViewController
         
         var ip = sender as NSIndexPath
-        
-        //vc.selectedBlog = BlogManager.sharedInstance.blogs.objectAtIndex(ip.row) as? Blog
-        
+                
         vc.blogIndex = ip.row
     }
     
@@ -155,7 +160,7 @@ class BlogCollectionViewController: UIViewController,BlogManagerDelegate, CHTCol
                 //banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
                 //self.collectionView.frame = CGRectOffset(self.collectionView.frame, 0, -banner.frame.size.height)
                 
-                self.collectionView.frame = CGRectMake(0, self.collectionView.frame.origin.y, self.collectionView.frame.width, self.collectionView.frame.size.height - banner.frame.size.height)
+//                self.collectionView.frame = CGRectMake(0, self.collectionView.frame.origin.y, self.collectionView.frame.width, self.collectionView.frame.size.height - banner.frame.size.height)
                 
             })
             

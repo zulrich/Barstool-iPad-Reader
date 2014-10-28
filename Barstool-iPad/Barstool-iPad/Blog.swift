@@ -18,7 +18,7 @@ class Blog : NSObject {
     var postContent:String
     var commentStatus:String
     var thumbNail:String
-    var blogId:NSNumber
+    var blogId:String
     var story_id:String
     
     init(dict:NSDictionary)
@@ -31,7 +31,7 @@ class Blog : NSObject {
         self.postDate = dict["post_date"] as String
         self.commentStatus = dict["comment_status"] as String
         self.thumbNail = dict["thumbnail"] as String
-        self.blogId = dict["blog_id"] as NSNumber
+        self.blogId = dict["blog_id"]!.stringValue as String
         self.story_id = dict["ID"] as String
         
         

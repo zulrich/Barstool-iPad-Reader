@@ -101,7 +101,7 @@ class WebNavViewController: UIViewController, UIWebViewDelegate, UIPopoverContro
     
     func activityViewControllerForSharing() -> UIActivityViewController
     {
-       // var blog = BlogManager.sharedInstance.blogs.objectAtIndex(blogIndex!) as Blog
+        //var blog = BlogManager.sharedInstance.blogsToShow.objectAtIndex(blogIndex!) as Blog
         
         var activityItems:NSMutableArray = NSMutableArray()
         

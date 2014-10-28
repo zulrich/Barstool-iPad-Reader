@@ -8,30 +8,10 @@
 
 import UIKit
 
-
-
 protocol BlogManagerDelegate {
     
     func blogsDone()
 }
-
-class Person: NSObject {
-    let firstName: NSString
-    let lastName: String
-    let age: Int
-    
-    init(firstName: NSString, lastName: String, age: Int) {
-        self.firstName = firstName
-        self.lastName = lastName
-        self.age = age
-    }
-    
-    override var description: String {
-        return "\(firstName) \(lastName)"
-    }
-}
-
-
 
 class BlogManager: NSObject, NSURLConnectionDataDelegate {
     
@@ -40,6 +20,7 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
     var blogs:NSMutableArray
     var cities:NSMutableDictionary
     var cityConnection:NSURLConnection
+    var blogsToShow:NSArray
     
     var blogData:NSMutableData
     var cityData:NSMutableData
@@ -48,6 +29,7 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
     
     override init() {
         
+        blogsToShow = NSArray()
         blogData = NSMutableData()
         cityData = NSMutableData()
         cityConnection = NSURLConnection()
@@ -87,64 +69,32 @@ class BlogManager: NSObject, NSURLConnectionDataDelegate {
         
         var blogRequestString = "userid=12f3c396a447636e175c04b74d6fed52&app_type=barstool_ios&call=get-stories&version=1.13&json={\"storydate\":\"\(dateStr)\",\"property\":\"1\"}&hash=bd7b40bccca3f09b7705851a6dd85933"
         
-        var blogRequest = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php"));
+        var blogRequest:NSMutableURLRequest! = NSMutableURLRequest(URL: NSURL(string:"http://www.barstoolsports.com/wp-content/plugins/json-generate/get.php")!);
         
         blogRequest.HTTPBody = blogRequestString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true);
         blogRequest.HTTPMethod = "POST";
         
-        self.connection = NSURLConnection(request: blogRequest, delegate: self);
-        
-        
+        self.connection = NSURLConnection(request: blogRequest, delegate: self)!;
         
     }
     
-    func getBlogsForId(blogId:String) -> NSMutableArray
+    func getBlogsForId(blogId:String)
     {
         
         if(blogId == "100")
         {
-            return blogs
+             blogsToShow = blogs
         }
         else
         {
     
-            //var:blogNum = NSNumber(int:blogId.toInt())
+            var intV = blogId.toInt()
             
-            //var blg = NSNumber(int: blogId.toInt())
+            let idPred = NSPredicate(format: "blogId = %@", blogId)
             
-            let idPred = NSPredicate(format: "author = %@", "feitelberg")
+            var retBlogs = self.blogs.filteredArrayUsingPredicate(idPred!)
             
-            var retBlogs = self.blogs.filteredArrayUsingPredicate(idPred)
-            
-            
-            
-//            let alice = Person(firstName: "Alice", lastName: "Smith", age: 24)
-//            let bob = Person(firstName: "Bob", lastName: "Jones", age: 27)
-//            let charlie = Person(firstName: "Charlie", lastName: "Smith", age: 33)
-//            let quentin = Person(firstName: "Quentin", lastName: "Alberts", age: 31)
-//            //var people = [alice, bob, charlie, quentin]
-//            
-//            var people = NSMutableArray(objects: alice, bob, charlie,quentin)
-//            
-//            let bobPredicate = NSPredicate(format: "firstName != %@", "aaab")
-//            //let smithPredicate = NSPredicate(format: "lastName = %@", "Smith")
-//            //let thirtiesPredicate = NSPredicate(format: "age >= 30")
-//            
-//            
-//            
-//            var x = people.filteredArrayUsingPredicate(bobPredicate)
-//            // ["Bob Jones"]
-//            
-//            //var y = people.filteredArrayUsingPredicate(smithPredicate)
-//            // ["Alice Smith", "Charlie Smith"]
-//            
-//            //var z = people.filteredArrayUsingPredicate(thirtiesPredicate)
-//            // ["Charlie Smith", "Quentin Alberts"]
-            
-            
-            
-        
-            return NSMutableArray(array: retBlogs)
+            blogsToShow = retBlogs
         }
     }
     

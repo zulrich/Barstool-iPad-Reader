@@ -68,6 +68,13 @@ class SettingsTableViewController: UITableViewController {
         else
         {
             settingsDelegate?.blogFilter(BlogColors.getBlogId(blogNames[indexPath.row]))
+            
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            
+            self.menuContainerViewController.toggleLeftSideMenuCompletion({
+                
+                println("Closing left")
+            })
         }
     }
     
@@ -80,12 +87,13 @@ class SettingsTableViewController: UITableViewController {
         {
             cell = tableView.dequeueReusableCellWithIdentifier("LoginCell") as UITableViewCell
             
-            cell.textLabel?.text = "Login Info"
+            cell.textLabel.text = "Login Info"
         }
         else
         {
             cell = tableView.dequeueReusableCellWithIdentifier("SettingsCell") as UITableViewCell
-            cell.textLabel?.text = blogNames[indexPath.row] as String
+            cell.textLabel.text = blogNames[indexPath.row] as String
+            
         }
         
         return cell
