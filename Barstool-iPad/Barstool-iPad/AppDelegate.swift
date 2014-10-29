@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var sideContainer = MFSideMenuContainerViewController.containerWithCenterViewController(navVC, leftMenuViewController: settingsVC, rightMenuViewController: nil)
         
-        self.window?.rootViewController = sideContainer
-        self.window?.makeKeyAndVisible()
+        //self.window?.rootViewController = sideContainer
+        //self.window?.makeKeyAndVisible()
         /*
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         

@@ -8,52 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		A50F8B7C19C9452A000539F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B7B19C9452A000539F9 /* AppDelegate.swift */; };
-		A50F8B7E19C9452A000539F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B7D19C9452A000539F9 /* ViewController.swift */; };
 		A50F8B8119C9452A000539F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B7F19C9452A000539F9 /* Main.storyboard */; };
 		A50F8B8319C9452A000539F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B8219C9452A000539F9 /* Images.xcassets */; };
 		A50F8B8619C9452A000539F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50F8B8419C9452A000539F9 /* LaunchScreen.xib */; };
 		A50F8B9219C9452A000539F9 /* Barstool_iPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F8B9119C9452A000539F9 /* Barstool_iPadTests.swift */; };
-		A5260CCB19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */; };
-		A526F43E19E392EE0047FA91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F43D19E392EE0047FA91 /* User.swift */; };
-		A54B9EF619E5A72C0003F39D /* MPArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF419E5A72C0003F39D /* MPArrowRight.png */; };
-		A54B9EF719E5A72C0003F39D /* MPArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */; };
-		A54B9EFA19E5A7340003F39D /* MPArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF819E5A7340003F39D /* MPArrowLeft.png */; };
-		A54B9EFB19E5A7340003F39D /* MPArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */; };
-		A54B9EFD19E5A8CB0003F39D /* WebNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */; };
-		A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5219E4F6BF00BF03C0 /* menu-icon.png */; };
-		A5578B5519E4F6BF00BF03C0 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */; };
-		A5578B6119E50AF500BF03C0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */; };
 		A562581C19FB3962001B537F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A562581B19FB3962001B537F /* iAd.framework */; };
-		A57CADD319F60B6A00150CEF /* greypaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A57CADD219F60B6A00150CEF /* greypaper2.jpg */; };
-		A57CADD519F60EC100150CEF /* sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CADD419F60EC100150CEF /* sketch.png */; };
-		A585E93F19F61C3C00D34E8E /* barstool175-75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A585E93E19F61C3C00D34E8E /* barstool175-75.jpg */; };
-		A585E94019F622E300D34E8E /* InlineComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */; };
-		A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586D80519E263C6005070D8 /* LoginViewController.swift */; };
-		A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5981EAA19D3B6B000B33347 /* BlogManager.swift */; };
-		A5981EAD19D3CA9D00B33347 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5981EAC19D3CA9D00B33347 /* Blog.swift */; };
 		A598675719DE504200839D00 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A598675619DE504200839D00 /* SwipeView.m */; };
 		A598675B19DE598A00839D00 /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A598675A19DE598A00839D00 /* BlogView.swift */; };
 		A598675D19DE59B300839D00 /* BlogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A598675C19DE59B300839D00 /* BlogView.xib */; };
 		A598676119DE7E3200839D00 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A598676019DE7E3200839D00 /* WebKit.framework */; };
-		A5A255C419E238CF009FA1AF /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A255C219E238CF009FA1AF /* up.png */; };
-		A5A255C519E238CF009FA1AF /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A255C319E238CF009FA1AF /* down.png */; };
-		A5A255CA19E24DD0009FA1AF /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A255C919E24DD0009FA1AF /* String+MD5.swift */; };
-		A5A255CF19E25B47009FA1AF /* InlineComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A255CE19E25B47009FA1AF /* InlineComposeView.m */; };
-		A5A255D219E25E41009FA1AF /* InlineComposeToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */; };
 		A5A38A8C19ECD34100BFEBE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */; };
 		A5A38A9219ECD3C100BFEBE6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5A38A8F19ECD3C100BFEBE6 /* SVProgressHUD.bundle */; };
 		A5A38A9319ECD3C100BFEBE6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */; };
-		A5B8A70D19DCF7C600F9D33A /* BlogColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */; };
-		A5B8A71019DCFBE200F9D33A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */; };
-		A5B8A71119DCFBE200F9D33A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */; };
-		A5BB0FB919DF8F1F00FA6D95 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */; };
-		A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */; };
-		A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */; };
+		A5AB6CEF1A00A66A0013A1EA /* InlineComposeToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6CEB1A00A66A0013A1EA /* InlineComposeToolbarView.m */; };
+		A5AB6CF01A00A66A0013A1EA /* InlineComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6CED1A00A66A0013A1EA /* InlineComposeView.m */; };
+		A5AB6CF11A00A66A0013A1EA /* InlineComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CEE1A00A66A0013A1EA /* InlineComposeView.xib */; };
+		A5AB6CFE1A00A6D40013A1EA /* barstool175-75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF31A00A6D40013A1EA /* barstool175-75.jpg */; };
+		A5AB6CFF1A00A6D40013A1EA /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF41A00A6D40013A1EA /* down.png */; };
+		A5AB6D001A00A6D40013A1EA /* greypaper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF51A00A6D40013A1EA /* greypaper2.jpg */; };
+		A5AB6D011A00A6D40013A1EA /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF61A00A6D40013A1EA /* menu-icon.png */; };
+		A5AB6D021A00A6D40013A1EA /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF71A00A6D40013A1EA /* menu-icon@2x.png */; };
+		A5AB6D031A00A6D40013A1EA /* MPArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF81A00A6D40013A1EA /* MPArrowLeft.png */; };
+		A5AB6D041A00A6D40013A1EA /* MPArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CF91A00A6D40013A1EA /* MPArrowLeft@2x.png */; };
+		A5AB6D051A00A6D40013A1EA /* MPArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CFA1A00A6D40013A1EA /* MPArrowRight.png */; };
+		A5AB6D061A00A6D40013A1EA /* MPArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CFB1A00A6D40013A1EA /* MPArrowRight@2x.png */; };
+		A5AB6D071A00A6D40013A1EA /* sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CFC1A00A6D40013A1EA /* sketch.png */; };
+		A5AB6D081A00A6D40013A1EA /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = A5AB6CFD1A00A6D40013A1EA /* up.png */; };
+		A5AB6D0D1A00A7120013A1EA /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D0A1A00A7120013A1EA /* Blog.swift */; };
+		A5AB6D0E1A00A7120013A1EA /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D0B1A00A7120013A1EA /* Comment.swift */; };
+		A5AB6D0F1A00A7120013A1EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D0C1A00A7120013A1EA /* User.swift */; };
+		A5AB6D141A00A81E0013A1EA /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D111A00A81E0013A1EA /* String+MD5.swift */; };
+		A5AB6D151A00A81E0013A1EA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D121A00A81E0013A1EA /* StringExtension.swift */; };
+		A5AB6D161A00A81E0013A1EA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D131A00A81E0013A1EA /* UIColorExtension.swift */; };
+		A5AB6D1C1A00A86E0013A1EA /* BlogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D191A00A86E0013A1EA /* BlogCollectionViewController.swift */; };
+		A5AB6D1D1A00A86E0013A1EA /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D1A1A00A86E0013A1EA /* CHTCollectionViewWaterfallLayout.swift */; };
+		A5AB6D241A00A8D10013A1EA /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D1F1A00A8D10013A1EA /* CommentsViewController.swift */; };
+		A5AB6D251A00A8D10013A1EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D201A00A8D10013A1EA /* LoginViewController.swift */; };
+		A5AB6D261A00A8D10013A1EA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D211A00A8D10013A1EA /* SettingsTableViewController.swift */; };
+		A5AB6D271A00A8D10013A1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D221A00A8D10013A1EA /* ViewController.swift */; };
+		A5AB6D281A00A8D10013A1EA /* WebNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D231A00A8D10013A1EA /* WebNavViewController.swift */; };
+		A5AB6D2C1A00A9190013A1EA /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D2A1A00A9190013A1EA /* BlogCollectionViewCell.swift */; };
+		A5AB6D2D1A00A9190013A1EA /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D2B1A00A9190013A1EA /* CommentTableViewCell.swift */; };
+		A5AB6D311A00A96A0013A1EA /* BlogColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D2F1A00A96A0013A1EA /* BlogColors.swift */; };
+		A5AB6D321A00A96A0013A1EA /* BlogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB6D301A00A96A0013A1EA /* BlogManager.swift */; };
 		A5E45BB219FE08B900F96982 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BAD19FE08B900F96982 /* MFSideMenuContainerViewController.m */; };
 		A5E45BB319FE08B900F96982 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BAF19FE08B900F96982 /* MFSideMenuShadow.m */; };
 		A5E45BB419FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E45BB119FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m */; };
-		A5FD7F6F19D23E390070E921 /* BlogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */; };
-		A5FD7F7119D240810070E921 /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,55 +70,57 @@
 		A50F8B7619C9452A000539F9 /* Barstool-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barstool-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50F8B7A19C9452A000539F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50F8B7B19C9452A000539F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A50F8B7D19C9452A000539F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A50F8B8019C9452A000539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A50F8B8219C9452A000539F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A50F8B8519C9452A000539F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A50F8B8B19C9452A000539F9 /* Barstool-iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Barstool-iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50F8B9019C9452A000539F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50F8B9119C9452A000539F9 /* Barstool_iPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barstool_iPadTests.swift; sourceTree = "<group>"; };
-		A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
-		A526F43D19E392EE0047FA91 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Barstool-iPad/User.swift"; sourceTree = "<group>"; };
-		A54B9EF419E5A72C0003F39D /* MPArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowRight.png; sourceTree = "<group>"; };
-		A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowRight@2x.png"; sourceTree = "<group>"; };
-		A54B9EF819E5A7340003F39D /* MPArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowLeft.png; sourceTree = "<group>"; };
-		A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowLeft@2x.png"; sourceTree = "<group>"; };
-		A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebNavViewController.swift; path = "Barstool-iPad/WebNavViewController.swift"; sourceTree = "<group>"; };
-		A5578B5219E4F6BF00BF03C0 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
-		A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
-		A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = "Barstool-iPad/SettingsTableViewController.swift"; sourceTree = "<group>"; };
 		A562581B19FB3962001B537F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		A57CADD219F60B6A00150CEF /* greypaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greypaper2.jpg; sourceTree = "<group>"; };
-		A57CADD419F60EC100150CEF /* sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sketch.png; sourceTree = "<group>"; };
-		A585E93E19F61C3C00D34E8E /* barstool175-75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "barstool175-75.jpg"; sourceTree = "<group>"; };
-		A586D80519E263C6005070D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A5981EAA19D3B6B000B33347 /* BlogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogManager.swift; path = "Barstool-iPad/BlogManager.swift"; sourceTree = "<group>"; };
-		A5981EAC19D3CA9D00B33347 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blog.swift; path = "Barstool-iPad/Blog.swift"; sourceTree = "<group>"; };
 		A598675519DE504200839D00 /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
 		A598675619DE504200839D00 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		A598675919DE51F500839D00 /* Barstool-iPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Barstool-iPad-Bridging-Header.h"; sourceTree = "<group>"; };
 		A598675A19DE598A00839D00 /* BlogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		A598675C19DE59B300839D00 /* BlogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogView.xib; sourceTree = "<group>"; };
 		A598676019DE7E3200839D00 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		A5A255C219E238CF009FA1AF /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
-		A5A255C319E238CF009FA1AF /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
-		A5A255C919E24DD0009FA1AF /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
-		A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineComposeView.xib; sourceTree = "<group>"; };
-		A5A255CD19E25B47009FA1AF /* InlineComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeView.h; sourceTree = "<group>"; };
-		A5A255CE19E25B47009FA1AF /* InlineComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeView.m; sourceTree = "<group>"; };
-		A5A255D019E25E41009FA1AF /* InlineComposeToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeToolbarView.h; sourceTree = "<group>"; };
-		A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeToolbarView.m; sourceTree = "<group>"; };
 		A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A5A38A8E19ECD3C100BFEBE6 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
 		A5A38A8F19ECD3C100BFEBE6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		A5A38A9019ECD3C100BFEBE6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogColors.swift; path = "Barstool-iPad/BlogColors.swift"; sourceTree = "<group>"; };
-		A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "Barstool-iPad/Comment.swift"; sourceTree = "<group>"; };
-		A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
-		A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentTableViewCell.swift; path = "Barstool-iPad/CommentTableViewCell.swift"; sourceTree = "<group>"; };
+		A5AB6CEA1A00A66A0013A1EA /* InlineComposeToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeToolbarView.h; sourceTree = "<group>"; };
+		A5AB6CEB1A00A66A0013A1EA /* InlineComposeToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeToolbarView.m; sourceTree = "<group>"; };
+		A5AB6CEC1A00A66A0013A1EA /* InlineComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineComposeView.h; sourceTree = "<group>"; };
+		A5AB6CED1A00A66A0013A1EA /* InlineComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineComposeView.m; sourceTree = "<group>"; };
+		A5AB6CEE1A00A66A0013A1EA /* InlineComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InlineComposeView.xib; sourceTree = "<group>"; };
+		A5AB6CF31A00A6D40013A1EA /* barstool175-75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "barstool175-75.jpg"; sourceTree = "<group>"; };
+		A5AB6CF41A00A6D40013A1EA /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		A5AB6CF51A00A6D40013A1EA /* greypaper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greypaper2.jpg; sourceTree = "<group>"; };
+		A5AB6CF61A00A6D40013A1EA /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		A5AB6CF71A00A6D40013A1EA /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
+		A5AB6CF81A00A6D40013A1EA /* MPArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowLeft.png; sourceTree = "<group>"; };
+		A5AB6CF91A00A6D40013A1EA /* MPArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowLeft@2x.png"; sourceTree = "<group>"; };
+		A5AB6CFA1A00A6D40013A1EA /* MPArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPArrowRight.png; sourceTree = "<group>"; };
+		A5AB6CFB1A00A6D40013A1EA /* MPArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPArrowRight@2x.png"; sourceTree = "<group>"; };
+		A5AB6CFC1A00A6D40013A1EA /* sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sketch.png; sourceTree = "<group>"; };
+		A5AB6CFD1A00A6D40013A1EA /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		A5AB6D0A1A00A7120013A1EA /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		A5AB6D0B1A00A7120013A1EA /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		A5AB6D0C1A00A7120013A1EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5AB6D111A00A81E0013A1EA /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		A5AB6D121A00A81E0013A1EA /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A5AB6D131A00A81E0013A1EA /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A5AB6D191A00A86E0013A1EA /* BlogCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewController.swift; sourceTree = "<group>"; };
+		A5AB6D1A1A00A86E0013A1EA /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		A5AB6D1F1A00A8D10013A1EA /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		A5AB6D201A00A8D10013A1EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A5AB6D211A00A8D10013A1EA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		A5AB6D221A00A8D10013A1EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5AB6D231A00A8D10013A1EA /* WebNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebNavViewController.swift; sourceTree = "<group>"; };
+		A5AB6D2A1A00A9190013A1EA /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5AB6D2B1A00A9190013A1EA /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		A5AB6D2F1A00A96A0013A1EA /* BlogColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogColors.swift; sourceTree = "<group>"; };
+		A5AB6D301A00A96A0013A1EA /* BlogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogManager.swift; sourceTree = "<group>"; };
 		A5E45BAB19FE08B900F96982 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
 		A5E45BAC19FE08B900F96982 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
 		A5E45BAD19FE08B900F96982 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
@@ -126,8 +128,6 @@
 		A5E45BAF19FE08B900F96982 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
 		A5E45BB019FE08B900F96982 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
 		A5E45BB119FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
-		A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewController.swift; sourceTree = "<group>"; };
-		A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,39 +154,13 @@
 		A50F8B6D19C9452A000539F9 = {
 			isa = PBXGroup;
 			children = (
+				A5AB6CE91A00A66A0013A1EA /* InlineComposeView */,
 				A5E45BAA19FE08B900F96982 /* MFSideMenu */,
-				A562581B19FB3962001B537F /* iAd.framework */,
-				A585E93E19F61C3C00D34E8E /* barstool175-75.jpg */,
-				A57CADD419F60EC100150CEF /* sketch.png */,
-				A57CADD219F60B6A00150CEF /* greypaper2.jpg */,
 				A5A38A8D19ECD3C100BFEBE6 /* SVProgressHUD */,
-				A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */,
-				A54B9EFC19E5A8CB0003F39D /* WebNavViewController.swift */,
-				A54B9EF819E5A7340003F39D /* MPArrowLeft.png */,
-				A54B9EF919E5A7340003F39D /* MPArrowLeft@2x.png */,
-				A54B9EF419E5A72C0003F39D /* MPArrowRight.png */,
-				A54B9EF519E5A72C0003F39D /* MPArrowRight@2x.png */,
-				A5578B6019E50AF500BF03C0 /* SettingsTableViewController.swift */,
-				A5578B5219E4F6BF00BF03C0 /* menu-icon.png */,
-				A5578B5319E4F6BF00BF03C0 /* menu-icon@2x.png */,
-				A526F43D19E392EE0047FA91 /* User.swift */,
-				A5A255CD19E25B47009FA1AF /* InlineComposeView.h */,
-				A5A255CE19E25B47009FA1AF /* InlineComposeView.m */,
-				A5A255D019E25E41009FA1AF /* InlineComposeToolbarView.h */,
-				A5A255D119E25E41009FA1AF /* InlineComposeToolbarView.m */,
-				A5A255CB19E25B3F009FA1AF /* InlineComposeView.xib */,
-				A5A255C219E238CF009FA1AF /* up.png */,
-				A5A255C319E238CF009FA1AF /* down.png */,
-				A598676019DE7E3200839D00 /* WebKit.framework */,
 				A598675919DE51F500839D00 /* Barstool-iPad-Bridging-Header.h */,
-				A5B8A70E19DCFBE200F9D33A /* StringExtension.swift */,
-				A5B8A70F19DCFBE200F9D33A /* UIColorExtension.swift */,
-				A5260CCA19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift */,
-				A5981EAA19D3B6B000B33347 /* BlogManager.swift */,
-				A5BB0FBC19E066AA00FA6D95 /* CommentTableViewCell.swift */,
-				A5B8A70C19DCF7C600F9D33A /* BlogColors.swift */,
-				A5981EAC19D3CA9D00B33347 /* Blog.swift */,
-				A5BB0FB819DF8F1F00FA6D95 /* Comment.swift */,
+				A562581B19FB3962001B537F /* iAd.framework */,
+				A5A38A8B19ECD34100BFEBE6 /* QuartzCore.framework */,
+				A598676019DE7E3200839D00 /* WebKit.framework */,
 				A50F8B7819C9452A000539F9 /* Barstool-iPad */,
 				A50F8B8E19C9452A000539F9 /* Barstool-iPadTests */,
 				A50F8B7719C9452A000539F9 /* Products */,
@@ -205,17 +179,18 @@
 		A50F8B7819C9452A000539F9 /* Barstool-iPad */ = {
 			isa = PBXGroup;
 			children = (
+				A5AB6D2E1A00A96A0013A1EA /* Managers */,
+				A5AB6D291A00A9190013A1EA /* Custom Cells */,
+				A5AB6D1E1A00A8D10013A1EA /* View Controllers */,
+				A5AB6D171A00A86E0013A1EA /* Collection Views */,
+				A5AB6D101A00A81E0013A1EA /* Extensions */,
+				A5AB6D091A00A7120013A1EA /* Data Models */,
+				A5AB6CF21A00A6D40013A1EA /* Images */,
 				A50F8B7B19C9452A000539F9 /* AppDelegate.swift */,
-				A50F8B7D19C9452A000539F9 /* ViewController.swift */,
 				A50F8B7F19C9452A000539F9 /* Main.storyboard */,
-				A586D80519E263C6005070D8 /* LoginViewController.swift */,
-				A5BB0FBA19E060A800FA6D95 /* CommentsViewController.swift */,
-				A5A255C919E24DD0009FA1AF /* String+MD5.swift */,
 				A598675C19DE59B300839D00 /* BlogView.xib */,
 				A598675A19DE598A00839D00 /* BlogView.swift */,
 				A598675419DE504200839D00 /* SwipeView */,
-				A5FD7F7019D240810070E921 /* BlogCollectionViewCell.swift */,
-				A5FD7F6E19D23E390070E921 /* BlogCollectionViewController.swift */,
 				A50F8B8219C9452A000539F9 /* Images.xcassets */,
 				A50F8B8419C9452A000539F9 /* LaunchScreen.xib */,
 				A50F8B7919C9452A000539F9 /* Supporting Files */,
@@ -266,6 +241,95 @@
 				A5A38A9119ECD3C100BFEBE6 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		A5AB6CE91A00A66A0013A1EA /* InlineComposeView */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6CEA1A00A66A0013A1EA /* InlineComposeToolbarView.h */,
+				A5AB6CEB1A00A66A0013A1EA /* InlineComposeToolbarView.m */,
+				A5AB6CEC1A00A66A0013A1EA /* InlineComposeView.h */,
+				A5AB6CED1A00A66A0013A1EA /* InlineComposeView.m */,
+				A5AB6CEE1A00A66A0013A1EA /* InlineComposeView.xib */,
+			);
+			path = InlineComposeView;
+			sourceTree = "<group>";
+		};
+		A5AB6CF21A00A6D40013A1EA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6CF31A00A6D40013A1EA /* barstool175-75.jpg */,
+				A5AB6CF41A00A6D40013A1EA /* down.png */,
+				A5AB6CF51A00A6D40013A1EA /* greypaper2.jpg */,
+				A5AB6CF61A00A6D40013A1EA /* menu-icon.png */,
+				A5AB6CF71A00A6D40013A1EA /* menu-icon@2x.png */,
+				A5AB6CF81A00A6D40013A1EA /* MPArrowLeft.png */,
+				A5AB6CF91A00A6D40013A1EA /* MPArrowLeft@2x.png */,
+				A5AB6CFA1A00A6D40013A1EA /* MPArrowRight.png */,
+				A5AB6CFB1A00A6D40013A1EA /* MPArrowRight@2x.png */,
+				A5AB6CFC1A00A6D40013A1EA /* sketch.png */,
+				A5AB6CFD1A00A6D40013A1EA /* up.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A5AB6D091A00A7120013A1EA /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D0A1A00A7120013A1EA /* Blog.swift */,
+				A5AB6D0B1A00A7120013A1EA /* Comment.swift */,
+				A5AB6D0C1A00A7120013A1EA /* User.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		A5AB6D101A00A81E0013A1EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D111A00A81E0013A1EA /* String+MD5.swift */,
+				A5AB6D121A00A81E0013A1EA /* StringExtension.swift */,
+				A5AB6D131A00A81E0013A1EA /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5AB6D171A00A86E0013A1EA /* Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D191A00A86E0013A1EA /* BlogCollectionViewController.swift */,
+				A5AB6D1A1A00A86E0013A1EA /* CHTCollectionViewWaterfallLayout.swift */,
+			);
+			path = "Collection Views";
+			sourceTree = "<group>";
+		};
+		A5AB6D1E1A00A8D10013A1EA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D1F1A00A8D10013A1EA /* CommentsViewController.swift */,
+				A5AB6D201A00A8D10013A1EA /* LoginViewController.swift */,
+				A5AB6D211A00A8D10013A1EA /* SettingsTableViewController.swift */,
+				A5AB6D221A00A8D10013A1EA /* ViewController.swift */,
+				A5AB6D231A00A8D10013A1EA /* WebNavViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A5AB6D291A00A9190013A1EA /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D2A1A00A9190013A1EA /* BlogCollectionViewCell.swift */,
+				A5AB6D2B1A00A9190013A1EA /* CommentTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		A5AB6D2E1A00A96A0013A1EA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB6D2F1A00A96A0013A1EA /* BlogColors.swift */,
+				A5AB6D301A00A96A0013A1EA /* BlogManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		A5E45BAA19FE08B900F96982 /* MFSideMenu */ = {
@@ -368,23 +432,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A255C419E238CF009FA1AF /* up.png in Resources */,
-				A54B9EFA19E5A7340003F39D /* MPArrowLeft.png in Resources */,
 				A598675D19DE59B300839D00 /* BlogView.xib in Resources */,
-				A54B9EF719E5A72C0003F39D /* MPArrowRight@2x.png in Resources */,
-				A5578B5519E4F6BF00BF03C0 /* menu-icon@2x.png in Resources */,
+				A5AB6D031A00A6D40013A1EA /* MPArrowLeft.png in Resources */,
+				A5AB6CF11A00A66A0013A1EA /* InlineComposeView.xib in Resources */,
+				A5AB6D061A00A6D40013A1EA /* MPArrowRight@2x.png in Resources */,
 				A50F8B8119C9452A000539F9 /* Main.storyboard in Resources */,
-				A585E93F19F61C3C00D34E8E /* barstool175-75.jpg in Resources */,
-				A5578B5419E4F6BF00BF03C0 /* menu-icon.png in Resources */,
+				A5AB6CFF1A00A6D40013A1EA /* down.png in Resources */,
+				A5AB6D051A00A6D40013A1EA /* MPArrowRight.png in Resources */,
 				A5A38A9219ECD3C100BFEBE6 /* SVProgressHUD.bundle in Resources */,
-				A57CADD319F60B6A00150CEF /* greypaper2.jpg in Resources */,
-				A54B9EF619E5A72C0003F39D /* MPArrowRight.png in Resources */,
+				A5AB6D001A00A6D40013A1EA /* greypaper2.jpg in Resources */,
+				A5AB6D081A00A6D40013A1EA /* up.png in Resources */,
 				A50F8B8619C9452A000539F9 /* LaunchScreen.xib in Resources */,
-				A54B9EFB19E5A7340003F39D /* MPArrowLeft@2x.png in Resources */,
-				A585E94019F622E300D34E8E /* InlineComposeView.xib in Resources */,
 				A50F8B8319C9452A000539F9 /* Images.xcassets in Resources */,
-				A5A255C519E238CF009FA1AF /* down.png in Resources */,
-				A57CADD519F60EC100150CEF /* sketch.png in Resources */,
+				A5AB6D041A00A6D40013A1EA /* MPArrowLeft@2x.png in Resources */,
+				A5AB6D021A00A6D40013A1EA /* menu-icon@2x.png in Resources */,
+				A5AB6CFE1A00A6D40013A1EA /* barstool175-75.jpg in Resources */,
+				A5AB6D011A00A6D40013A1EA /* menu-icon.png in Resources */,
+				A5AB6D071A00A6D40013A1EA /* sketch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,32 +466,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A255D219E25E41009FA1AF /* InlineComposeToolbarView.m in Sources */,
-				A54B9EFD19E5A8CB0003F39D /* WebNavViewController.swift in Sources */,
-				A5A255CF19E25B47009FA1AF /* InlineComposeView.m in Sources */,
-				A5981EAB19D3B6B000B33347 /* BlogManager.swift in Sources */,
-				A5A255CA19E24DD0009FA1AF /* String+MD5.swift in Sources */,
+				A5AB6D271A00A8D10013A1EA /* ViewController.swift in Sources */,
+				A5AB6D0F1A00A7120013A1EA /* User.swift in Sources */,
+				A5AB6D1D1A00A86E0013A1EA /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				A5AB6D241A00A8D10013A1EA /* CommentsViewController.swift in Sources */,
+				A5AB6D251A00A8D10013A1EA /* LoginViewController.swift in Sources */,
+				A5AB6D141A00A81E0013A1EA /* String+MD5.swift in Sources */,
 				A5E45BB419FE08B900F96982 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				A598675719DE504200839D00 /* SwipeView.m in Sources */,
-				A5BB0FBB19E060A800FA6D95 /* CommentsViewController.swift in Sources */,
-				A5B8A70D19DCF7C600F9D33A /* BlogColors.swift in Sources */,
-				A50F8B7E19C9452A000539F9 /* ViewController.swift in Sources */,
-				A526F43E19E392EE0047FA91 /* User.swift in Sources */,
+				A5AB6D151A00A81E0013A1EA /* StringExtension.swift in Sources */,
+				A5AB6CEF1A00A66A0013A1EA /* InlineComposeToolbarView.m in Sources */,
+				A5AB6D0D1A00A7120013A1EA /* Blog.swift in Sources */,
+				A5AB6D0E1A00A7120013A1EA /* Comment.swift in Sources */,
+				A5AB6D311A00A96A0013A1EA /* BlogColors.swift in Sources */,
+				A5AB6CF01A00A66A0013A1EA /* InlineComposeView.m in Sources */,
 				A5A38A9319ECD3C100BFEBE6 /* SVProgressHUD.m in Sources */,
-				A586D80619E263C6005070D8 /* LoginViewController.swift in Sources */,
+				A5AB6D2C1A00A9190013A1EA /* BlogCollectionViewCell.swift in Sources */,
 				A5E45BB319FE08B900F96982 /* MFSideMenuShadow.m in Sources */,
+				A5AB6D321A00A96A0013A1EA /* BlogManager.swift in Sources */,
 				A598675B19DE598A00839D00 /* BlogView.swift in Sources */,
 				A5E45BB219FE08B900F96982 /* MFSideMenuContainerViewController.m in Sources */,
+				A5AB6D161A00A81E0013A1EA /* UIColorExtension.swift in Sources */,
+				A5AB6D2D1A00A9190013A1EA /* CommentTableViewCell.swift in Sources */,
+				A5AB6D261A00A8D10013A1EA /* SettingsTableViewController.swift in Sources */,
+				A5AB6D1C1A00A86E0013A1EA /* BlogCollectionViewController.swift in Sources */,
+				A5AB6D281A00A8D10013A1EA /* WebNavViewController.swift in Sources */,
 				A50F8B7C19C9452A000539F9 /* AppDelegate.swift in Sources */,
-				A5BB0FBD19E066AA00FA6D95 /* CommentTableViewCell.swift in Sources */,
-				A5981EAD19D3CA9D00B33347 /* Blog.swift in Sources */,
-				A5B8A71019DCFBE200F9D33A /* StringExtension.swift in Sources */,
-				A5BB0FB919DF8F1F00FA6D95 /* Comment.swift in Sources */,
-				A5FD7F7119D240810070E921 /* BlogCollectionViewCell.swift in Sources */,
-				A5B8A71119DCFBE200F9D33A /* UIColorExtension.swift in Sources */,
-				A5FD7F6F19D23E390070E921 /* BlogCollectionViewController.swift in Sources */,
-				A5260CCB19DBA73000F994A0 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
-				A5578B6119E50AF500BF03C0 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
